@@ -1,0 +1,26 @@
+POST http://localhost:3333/repositories
+Content-Type: application/json
+
+{
+  "title": "Repo2",
+  "url": "http://aaaaaaaa.com.br",
+  "techs": ["react", "ts", "php"]
+}
+
+###
+
+GET http://localhost:3333/repositories
+
+###
+PUT http://localhost:3333/repositories/8ea4b611-257a-4100-948c-19ba6e62c634
+Content-Type: application/json
+
+{
+  "title": "Repo3",
+  "url": "http://aaaaaaaa.com.br",
+  "techs": ["react", "ts", "php"]
+}
+
+###
+DELETE http://localhost:3333/repositories/8ea4b611-257a-4100-948c-19ba6e62c634
+Content-Type: application/json
